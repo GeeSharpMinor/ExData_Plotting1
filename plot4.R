@@ -27,7 +27,7 @@ plot(y=power$Sub_metering_1, x=power$Time, type="l", ylab= "Energy sub metering"
 with(power, lines(y=Sub_metering_2, x=Time, col = "red"));
 with(power, lines(y=Sub_metering_3, x=Time, col = "blue"));
 
-legend(x="topright", lty=1, bty="n", cex=1, col = c("black", "blue", "red"), 
+legend(x="topright", lty=1, cex=.8, bty="n", col = c("black", "blue", "red"), 
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"));
 
 # Plot the top right graph
