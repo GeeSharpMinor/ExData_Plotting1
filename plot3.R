@@ -24,4 +24,3 @@ legend(x="topright", lty=1, col = c("black", "blue", "red"), legend = c("Sub_met
 
 dev.copy(png, filename = "plot3.png", width=480, height = 480);
 dev.off();
-

@@ -8,6 +8,8 @@ download.file(url=url, destfile=zipfile);
 power <- read.table(file=unz(zipfile, "household_power_consumption.txt"), sep = ";", 
                     na.strings = "?", header=TRUE, stringsAsFactors=FALSE);
 
+
+
 power <- rbind(subset(power, Date=="1/2/2007"), subset(power, Date=="2/2/2007"));
 power$Time <- strptime(x = paste(power$Date, power$Time), format = "%d/%m/%Y %H:%M:%S");           
 power$Date <- as.Date(power$Date, "%d/%m/%Y");
